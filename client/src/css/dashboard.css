@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+.page {
+    display: flex;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-between;
+}
+
+.navbar {
+    flex: 0.04;
+    background-color: #FAD8D8;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.active {
+    background-color: white;
+    padding: 11px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.navicon {
+    padding: 11px;
+    display: flex;
+}
+
+.navicon:hover {
+    background-color: white;
+    padding: 11px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pages {
+    flex: 1;
+    margin: 5px;
+}
+
+.chat-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-bar {
+    flex: 0.3;
+    background-color: #FAD8D8;
+    width: 200px;
+    margin: 5px;
+    height: 95vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-body {
+    flex: 1;
+    margin: 5px;
+    background-color: #FAD8D8;
+    height: 95vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    flex: 0.1;
+    display: flex;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.chat-header img {
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+.chat-header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 7px;
+}
+
+.chat-header h4  {
+    font-size: 20px;
+    margin-bottom: -3px;
+}
+
+.chat-header p {
+    font-size: 12px;
+    margin-top: -3px;
+}
+
+.chat-main {
+    flex: 1;
+}
+
+.chat-footer {
+    flex: 0.1;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus-icon {
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    padding: 4px;
+    margin: 10px;
+}
+
+.chat-footer input {
+    margin: 8px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 7px;
+    font-size: medium;
+}
+
+.send-icon {
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 10px;
+}
+
+
+.search-bar {
+    /* outline: auto; */
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar > input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px;
+    flex: 1;
+}
+
+.search-icon {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sidebar-body {
+    flex: 1;
+    margin: 5px;
+}
+
+.profile-box {
+    flex: 0.01;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.profile-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+    position: relative;
+    bottom: 7px;
+}
+
+.profile-name > h4 {
+    margin: 0px;
+    margin-bottom: -10px;
+}
+
+.profile-name span, .chat-header span {
+    color: red;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 7px;
+    position: relative;
+    bottom: 1px;
+}
+
+.profile-name > p {
+    margin: 0px;
+    font-size: small;
+    margin-top: -10px;
+}
+
+.pfp-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pfp-name > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+

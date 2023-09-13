@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.body-box {
+  perspective: 150rem;
+  margin: 2em auto;
+  height: 500px;
+  width: 400px;
+  box-shadow: none;
+  background: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-side {
+  height: 31rem;
+  border-radius: 15px;
+  transition: all 0.9s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 0.5rem 2rem;
+  color: white;
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  background-color: #FAD8D8;
+}
+.card-side.front {
+  background-color: #FAD8D8;
+}
+
+.loading {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.749);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2
+}
+
+.load-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.form-1 {
+  color: black;
+}
+
+.form-1 > h2 {
+  color: #743636;
+  cursor: default;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.eye-icon, .login-eye-icon {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  left: 327px;
+  bottom: 196px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.login-eye-icon { 
+  bottom: 264px;
+}
+
+.form-1 > h3 {
+  color: #743636;
+  cursor: default;
+}
+
+.form-1 > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.form-1 > form > label {
+  font-weight: 500;
+}
+.form-1 > form > input {
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+}
+
+.form-1 > form > button {
+  margin: 1cqi auto;
+  padding: 5px 20px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #743636;
+  border-radius: 5px;
+  font-size: medium;
+  cursor: pointer;
+  transition: 0.2s ease-in-out 0.05s;
+}
+
+.form-1 > form > button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 0px #3d1e1e;
+}
+
+.frgt-pass {
+  font-size: 15px;
+  text-decoration: underline;
+  margin-left: 180px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.frgt-pass:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.form-1 > form > p {
+  text-align: center;
+}
+
+.hidden {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.show-pass {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  width: 20px;
+  cursor: pointer;
+  left: 305px;
+  bottom: 196px;
+}
+
+.show-confirm {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  width: 20px;
+  cursor: pointer;
+  left: 325px;
+  bottom: 131px;
+}
+
+.show-user {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  bottom: 261px;
+  left: 325px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.form-1 > form > p > span {
+  text-decoration: underline;
+}
+
+.form-1 > form > p {
+  margin: 1rem;
+}
+
+.form-1 > form > p > span:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.age-gender {
+  display: flex;
+  font-weight: 500;
+  margin: 7px 0px;
+  gap: 20px;
+}
+
+.gender-box > select {
+  padding: 5px 7px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.age-box > input{
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 50px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
